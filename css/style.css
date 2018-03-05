@@ -1,0 +1,268 @@
+/*Généralités*/
+body {
+	font-family : calibri, cursive;
+	font-size : 14px;
+	text-align : justify;
+}
+
+h1 {
+	text-align: center;
+}
+
+h6 {
+	font-size: 8px;
+	padding :0px
+	margin: 0px;
+}
+
+/* Mise en place menu déroulant supérieur*/
+#navsup {
+	height : 60px;
+	width : 100%;
+	background-color : grey;
+	text-align : center;
+	position :fixed;
+	top : 0px;
+	z-index : 100;
+}
+
+#navsup, nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navsup li{
+	display: inline-block;
+	text-align : center;
+	height: 30px;
+	width : 170px;
+	font-family : Arial;
+	position : relative;
+	top :15px;
+	border-radius: 2px;
+}
+
+#menusup li{
+	display : inline-block;
+	font-family : cursive;
+	font-size : 12px;
+	margin : 10px;	
+}
+
+#menusup {
+	position : absolute;
+	top : 45px;
+	z-index : 1000;
+	max-height: 0;
+	left: 0;
+	right: 0;
+	overflow : hidden;
+	-moz-transition :.8s all .2s;
+	-webkit-transition: .8s all .2s;
+	transition :.8s all .2s;
+	background-color : none;
+}
+
+#navsup li:hover ul{
+	max-height :50em;
+}
+
+/* Spécificité des sous menus*/
+.buttonsup: hover {
+	background-color :lime;
+	color : white;
+}
+.buttonsup {
+	text-align: center;
+	border : none;
+	color : black;
+	box-shadow: none;
+	background-color: none;
+}
+
+/*Mise en page du bandeau*/
+#banner{
+	height: 300px;
+	background-image: url(../image/header-image.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size :cover;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*Description pour ajustement à la taille de l'écran page accueil*/
+@media all {
+	#container {
+		margin-top: 50px;
+		display : grid;
+		grid-gap: 2px;
+		grid-template-columns: repeat(5, 220px);
+		grid-template-rows: repeat(2, 220px);
+		grid-auto-flow: row;
+		text-align: center;
+		align-content: center;
+		justify-content: space-around;
+	}
+}
+
+/*Description pour les écrans tablette en paysage page accueil*/
+@media all and (max-width: 1120px) {
+	#container {
+		margin-top: 50px;
+		display : grid;
+		grid-gap: 2px;
+		grid-template-columns: repeat(4, 220px);
+		grid-template-rows: repeat(2, 220px);
+		grid-auto-flow: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+/*Description pour les smartphones en paysage ou tablette en portrait page accueil*/
+@media all and (max-width : 900px) {
+	#container {
+		margin-top: 50px;
+		display : grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(3, 220px);
+		grid-template-rows: repeat(3, 220px);
+		grid-auto-flow: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+/*Description pour les écrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+	#container {
+		margin-top: 50px;
+		display : grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(2, 220px);
+		grid-template-rows: repeat(4, 220px);
+		grid-auto-flow: row;
+		align-content: center;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	#menuhaut {
+		display: none;
+	}
+}
+
+/*Description pour les smartphones en portrait page accueil*/
+@media all and (max-width: 460px) {
+	#container {
+		margin-top: 50px;
+		display : grid;
+		grid-gap : 5px;
+		grid-template-columns: 220px;
+		grid-template-rows: repeat(8, 220px);
+		grid-auto-flow: row;
+		align-content: right;
+		align-items: right;
+		justify-content: space-around;
+	}
+
+	#menuhaut {
+		display: none;
+	}
+}
+
+/*Jusqu’à 479px : smartphone en portrait
+De 480px à 959px : smartphone en paysage, tablette en portrait et petite tablette en paysage
+De 960px à 1280px : tablette en paysage, écran d’ordinateur de taille petite et moyenne
+1281px et au delà : grand écran d’ordinateur (21″ et + en plein écran )*/
+
+/*Description des block Jeux*/
+.button {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	border: 2px solid black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family : cursive;
+	color: black;
+	border-radius: 5px;
+}
+
+.go {
+	width : 50px;
+	height: 25px;
+	border-color: 1px solid black;
+	border-radius: 5px;
+}
+
+.go:hover {
+	width: 55px;
+	height: 28px;
+	-webkit-transition : 0.2s;
+	color : blue;
+}
+
+/*Mise en page du pied de page*/
+	
+footer {
+	position: relative;
+	bottom :0;
+	left:0;
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	color :black;
+	text-align : center;
+}
+
+/*Description affichage page intérieure*/
+#icon-hamburger {
+	position : relative;
+}
+
+#button-hamburger{
+	background-color: white;
+	border: 0px;
+}
+
+#hamburger {
+	width: 50px;
+	height: 50px;
+	border: 0px;
+}
+
+#site-menu {
+	display: none;
+	position: fixed;
+	top : 50px;
+	width: 50px;
+}
+
+#navmenu {
+	background-color : white;
+}
+
+.buttonpage{
+	width: 60px;
+	height: 60px;
+	padding :2px
+	margin: 0px;
+	background-color: white;
+}
+
+.site-content {
+	max-width:1900px;
+	position : absolute;
+	left: 50px;
+	top: 300px;
+	margin: 25px;
+	z-index: -100;
+}
+

@@ -1,0 +1,62 @@
+
+
+span {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.link {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*Description du bouton*/
+#newLien {
+	margin: 20px;
+	border : 1px solid black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px gray;
+	height: 20px;
+	width: 75px;
+	background-color: white;
+	font-size: 13px;
+}
+
+#newLien:hover {
+	-webkit-transition: 0.2s;
+	height: 22px;
+	width: 82px;
+	margin: 18px;
+	text-decoration: underline;
+	box-shadow: 2px 2px 5px darkgray;
+}
+
+/*Description du formulaire du lien*/
+
+
+.li {
+	display: inline-flex;
+	border : 1px solid black;
+}
+
+#nom {
+	width: 100px;
+}
+
+#titre {
+	width: 150px;
+}
+
+#lien {
+	width: 250px;
+}
+
+.confirmation {
+	height : 30px;
+	background-color: #d5e3f4;
+	padding: 10px;
+	margin : 10px;
+	border-radius: 5px;
+	color: #0100ff;
+}

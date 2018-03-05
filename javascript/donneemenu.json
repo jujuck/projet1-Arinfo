@@ -1,0 +1,56 @@
+[
+        {
+            "name": "Connaissance et études",
+            "accroche": "La théorie avant la pratique",
+            "image": "icon/connaissances.jpg",
+            "url": "html/connaissances.html"
+        },
+        {
+            "name": "L'entrainement et le canoë kayak",
+            "accroche": "Du débutant au champion",
+            "image": "icon/entrainement.jpg",
+            "url": "html/entrainement.html"
+        },
+        {
+            "name": "Communication et marketing",
+            "accroche": "Un projet de développement",
+            "image": "icon/marketing.jpg",
+            "url": "html/communication.html"
+        },
+        {
+            "name": "Management",
+            "accroche": "La gestion d'équipe",
+            "image": "icon/management.jpg",
+            "url": "html/management.html"
+        },
+        {
+            "name": "Formateur au CREPS",
+            "accroche": "L'enseignement",
+            "image": "icon/enseignement.jpg",
+            "url": "html/formateur.html"
+        },
+        {
+            "name": "Mon projet d'autoconstruction",
+            "accroche": "La rénovation d'une grange",
+            "image": "icon/autocontruction.jpg",
+            "url": "html/autoconstruction.html"
+        },
+        {
+            "name": "Le web développement",    
+            "accroche": "Un nouveau projet",
+            "image": "icon/webdev.jpg",
+            "url": "html/webdeveloppement.html"
+        },
+        {
+            "name": "Les langues étrangères",
+            "accroche": "Voyage et rencontres",
+            "image": "icon/langues.jpg",
+            "url": "html/langues.html"
+        },
+        {
+            "name": "Mes loisirs",
+            "accroche": "Sport et musique",
+            "image": "icon/loisir.jpg",
+            "url": "html/loisir.html"
+        }   
+]

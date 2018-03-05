@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mes connaissances</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" a="" href="../css/style.css">
+	<script src="../javascript/script.js"></script>
+<head>
+<body>
+	<div id="icon-hamburger">
+		<button id="button-hamburger" onmouseover="sendTheMenu()" class="button-hamburger"><img id="hamburger" src="icon/icon_menu_hamburger.jpg" atl="menu" title="menu"></button>
+	</div>
+    <div id="site-menu">
+	    <nav class="menuhamb" >
+		    <button id="navmenu" onclick="returnTheAJAX()"><img src="icon/accueil.jpg" class="buttonpage accueil"></button>
+			<button id="navmenu" onclick="sendTheAJAX1()"><img src="icon/entrainement.jpg" class="buttonpage entrainement"></button>
+			<button id="navmenu" onclick="sendTheAJAX2()"><img src="icon/marketing.jpg" class="buttonpage communication"></button>
+			<button id="navmenu" onclick="sendTheAJAX3()"><img src="icon/management.jpg" class="buttonpage management"></button>
+			<button id="navmenu" onclick="sendTheAJAX4()"><img src="icon/enseignement.jpg" class="buttonpage enseignement"></button>
+			<button id="navmenu" onclick="sendTheAJAX5()"><img src="icon/autoconstruction.jpg" class="buttonpage construction"></button>
+			<button id="navmenu" onclick="sendTheAJAX6()"><img src="icon/webdev.jpg" class="buttonpage webdeveloppement"></button>
+			<button id="navmenu" onclick="sendTheAJAX7()"><img src="icon/langues.jpg" class="buttonpage langues"></button>
+			<button id="navmenu" onclick="sendTheAJAX8()"><img src="icon/loisir.jpg" class="buttonpage loisir"></button>
+			<button id="navmenu" onclick="sendTheAJAX9()"><img src="icon/contact.jpg" class="buttonpage contact"></button>
+	    </nav>
+	</div>
+    <div class="site-content">
+            <div class="page">
+				<h1>Mes Etudes et les matières étudiées</h1>
+				<section>
+					<a name="bac-S"></a>
+					<h2>Le Lycée et mon bac S<br></h2>
+						<ul type="square">
+							<li>Spe biologie<br></li>
+							<li>informatique<br></li>
+						</ul>
+						<form action="scripts.php" method="post" id="x" onsubmit="x.value = ( (R1.value * ( Y2.value / Y1.value )) - R2.value ) / ( ( X1.value * (Y2.value / Y1.value)) - X2.value ); return false;">
+							<p><input name="X1" id="t_X1" type="number"><label for="t_X1">X</label> x <input name="Y1" id="t_Y1" type="number"><label for="t_Y1">Y</label> = <input name="R1" id="t_R1" type="number"><label for="t_R1"></label></p>
+							<p><input name="X2" id="t_X2" type="number"><label for="t_X2">X</label> x <input name="Y2" id="t_Y2" type="number"><label for="t_Y2">Y</label> = <input name="R2" id="t_R2" type="number"><label for="t_R2"></label></p>
+							<p>Etape 1 le dominateur commun<br>X = <output for="t_Y1 t_Y2" name="x" form="x"></output></p>
+							<p><input value="calculer" type="submit"></p>
+					</form>
+				</section>
+				<section>
+					<a name="deug-staps"></a><br><br>
+					<h2>L'université et le Deug Staps<br></h2>
+					<ol type="A">
+						<li>Psycho et socio et statistique pour l'étude et compréhension du public<br></li>
+						<li>Péda et didactique pour le management de groupe<br></li>
+						<li>Physio, anatomie et informatique<br></li>
+						<li>Le systeme sportif français<br></li>
+					</ol>
+					<center><a href="http://www.staps.univ-nantes.fr/accueil/staps-les-sciences-et-techniques-des-aps-549519.kjsp" target="_blank"><img id="image" src="image/staps.jpg" atl="universite de nantes UFR Staps" title="UFR Staps de Nantes" widht="150%"></a></center>
+				</section>	
+				<section>
+					<a name="licence-staps"></a><br><br>
+					<h2>L'université et la licence Staps<br></h2>
+					<ul type="disc">
+						<li>Physio, préparation physique et plannification<br></li>
+						<li>Etude de disciplines : application d'une méthode d'analyse<br></li>
+					</ul>
+				</section>
+				<section>
+					<a name="maitrise-staps"></a><br><br>
+					<h2>Erasmus : la maitrise Sport Wissenschaft<br></h2>
+					<ul type="disc">
+						<li>Un autre systeme sportif<br></li>
+						<li>Apprendre une langue étrangère : l'allemand<br></li>
+					</ul>
+					<center><a href="http://www.uni-potsdam.de/" target="_blank"><img id="image" src="image/potsdam-uni.jpg" atl="Uni Potsdam, parc sans souci" title="L'universite de Potsdam, parc sanssouci"></a></center>
+				</section>
+			</div>
+    </div>
+</body>
+</html>

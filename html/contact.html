@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon profil</title>
+	<meta charset="utf-8">
+	<script src="javascript/script.js"></script>
+<head>
+<body>
+	<div id="icon-hamburger">
+		<button id="button-hamburger" onmouseover="sendTheMenu()" class="button-hamburger"><img id="hamburger" src="icon/icon_menu_hamburger.jpg" atl="menu" title="menu"></button>
+	</div>
+    <div id="site-menu">
+	    <nav class="menuhamb" >
+		  <button id="navmenu" onclick="returnTheAJAX()"><img src="icon/accueil.jpg" class="buttonpage accueil"></button>
+		    <button id="navmenu" onclick="sendTheAJAX0()"><img src="icon/connaissances.jpg" class="buttonpage communication"></button>
+			<button id="navmenu" onclick="sendTheAJAX1()"><img src="icon/entrainement.jpg" class="buttonpage entrainement"></button>
+			<button id="navmenu" onclick="sendTheAJAX2()"><img src="icon/marketing.jpg" class="buttonpage communication"></button>
+			<button id="navmenu" onclick="sendTheAJAX3()"><img src="icon/management.jpg" class="buttonpage management"></button>
+			<button id="navmenu" onclick="sendTheAJAX4()"><img src="icon/enseignement.jpg" class="buttonpage enseignement"></button>
+			<button id="navmenu" onclick="sendTheAJAX5()"><img src="icon/autoconstruction.jpg" class="buttonpage construction"></button>
+			<button id="navmenu" onclick="sendTheAJAX6()"><img src="icon/webdev.jpg" class="buttonpage webdeveloppement"></button>
+			<button id="navmenu" onclick="sendTheAJAX7()"><img src="icon/langues.jpg" class="buttonpage langues"></button>
+			<button id="navmenu" onclick="sendTheAJAX8()"><img src="icon/loisir.jpg" class="buttonpage loisir"></button>
+	    </nav>
+	</div>
+    <div class="site-content">
+		<section>
+			<a name="carte-identite"></a><br><br>
+			<h2>Ma carte d'identité<br></h2>
+				<ul>
+					<li>Julien Yves Joseph Therese RICHARD<br></li>
+					<li>né le 11 février 1983 à Nantes<br></li>
+					<li>eleve à Getigne, (Loire Atlantique)<br></li>
+					<li>Mere : Anne Le Guyader, origine Bretonne<br></li>
+					<li>Pere : Alain Richard, originaire de Getigne<br></li>
+				</ul>
+			<br><br><br>
+		</section>
+		<section>
+			<a name="contact"></a><br>
+			<h2>Contact<br></h2>
+				<ul>
+					<li>Adresse : 21 la Hinchere 85600 Treize Septiers<br></li>
+					<li>Tel : 06 12 55 96 22<br></li>
+					<li>mail : julien.y.richard@gmail.com<br></li>
+				</ul>
+			<br><br>
+			<form method="post" action="formulaire.html">
+			<fieldset>
+			<legend><h2>Formulaire</h2></legend>
+			<table widht="10" border="0" cellspacing="0" cellpadding="5">
+				<tbody>
+					<tr>
+						<td valign="top">Civilite</td>	
+						<td><input name="civilite" value="Monsieur" type="radio">Monsieur
+							<input name="civilite" value="Madame" checked="checked" type="radio">Madame
+							<input name="civilite" value="Mademoiselle" type="radio">Mademoiselle</td>
+					</tr><tr>
+					</tr><tr>
+						<td valign="top">Adresse</td>
+						<td><textarea name="adresse" rows="3"></textarea></td>
+					</tr>
+					<tr>
+						<td valign="top">Code Postal-ville</td>
+						<td><textarea name="code postal" rows="1" cols="10"></textarea>
+							<textarea name="ville" rows="1" cols="50"></textarea></td>
+					</tr>
+					<tr>
+						<td valign="top">Secteur professionel</td>
+							<td><select name="pro">
+								<option selected="selected">Agriculture
+								</option><option>Transport
+								</option><option>industrie
+								</option><option>Education
+								</option><option>Sport
+								</option><option>Culture
+								</option><option>Communication
+								</option><option>Developpement web
+								</option><option>Tourisme
+								</option><option>Autre
+							</option></select></td>
+					</tr>
+					<tr>
+						<td valign="top">Notation : qualite de la navigation sur le site (fil d'ariane)</td>
+						<td><input name="nav" value="tres bien" type="checkbox">Tres bien
+							<input name="nav" value="bien" type="checkbox">Bien
+							<input name="nav" value="correct" checked="checked" type="checkbox">Correct
+							<input name="nav" value="mauvaise" type="checkbox">Mauvaise
+							<input name="nav" value="très mauvaise" type="checkbox">Tres Mauvaise</td>
+					</tr>
+					<tr>
+						<td valign="top">Notation : qualité des contenus</td>
+						<td><input name="nav" value="tres bien" type="checkbox">Tres bien
+							<input name="nav" value="bien" checked="checked" type="checkbox">Bien
+							<input name="nav" value="correct" type="checkbox">Correct
+							<input name="nav" value="inutile" type="checkbox">Inutile</td>
+					</tr>
+					<tr>
+						<td valign="top">Si ce site vous a plu, merci de me laisser un commentaire :</td>
+						<td><textarea name="commentaire" rows="10" cols="50"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			</fieldset>
+				<table align="center">
+					<tbody>
+						<tr>
+							<td><input value="envoyer" type="submit"></td>
+							<td><input value="effacer" type="reset"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
